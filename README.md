@@ -1,1 +1,0 @@
-# Walmart-sales-data-analysis-using-SQL
