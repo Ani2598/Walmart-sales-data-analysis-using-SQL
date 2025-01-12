@@ -24,7 +24,7 @@ select *
 from
    (select 
       branch,
-       dayname(str_to_date(date,'%d/%m/%y')) as day_name,
+       dayname(str_to_date(date,'%d-%m-%y')) as day_name,
 	  count(*) as no_transactions,
       rank() over(partition by branch order by count(*) desc) as rank_transaction
     from walmart_clean_data
